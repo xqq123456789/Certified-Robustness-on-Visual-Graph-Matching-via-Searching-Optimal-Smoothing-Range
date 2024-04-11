@@ -117,7 +117,7 @@ if __name__ == '__main__':
                                 k = 1.1992 / 1
                         if ori_sigma==1.5:
                             if reg == 1 and train_corre == 0.01:
-                                corre_num = 0.013
+                                corre_num = 0.0116
                                 k = 1.6997 / 1.5
                         if ori_sigma==2:
                             if reg == 1 and train_corre == 0.01:
