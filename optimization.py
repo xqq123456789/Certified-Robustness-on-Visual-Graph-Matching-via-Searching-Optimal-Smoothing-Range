@@ -186,7 +186,7 @@ if __name__ == '__main__':
                     proxy_radius = prod * gap_sum * theta
 
                     kappa = 200
-                    radius_maximizer = -(proxy_radius.sum() + (gap_sum-max_gap_sum)*(corre_num/kappa))
+                    radius_maximizer = -(proxy_radius.sum() + (gap_sum-max_gap_sum)/(corre_num*kappa))
 
                     radius_maximizer.backward(retain_graph=True)
                     optimizer1.step()
