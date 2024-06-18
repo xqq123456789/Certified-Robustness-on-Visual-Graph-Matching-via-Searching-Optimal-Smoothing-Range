@@ -90,49 +90,8 @@ if __name__ == '__main__':
                 for ori_sigma in [0.5]:
 
                     #optimization result
-                    if gm_method == "ngmv2":
-                        if ori_sigma==0.5:
-                            if reg==1 and train_corre==0.01:
-                                corre_num = 0.016
-                                k = 0.7017 / 0.5
-                            elif reg==1 and train_corre==0.005:
-                                corre_num = 0.022
-                                k = 0.7008 / 0.5
-                            elif reg==1 and train_corre==0.015:
-                                corre_num = 0.021
-                                k = 0.6986 / 0.5
-                            elif reg==1 and train_corre==0.02:
-                                corre_num = 0.0195
-                                k = 0.699 / 0.5
-                            else:
-                                if cr ==1 :
-                                    corre_num = 0.020
-                                    k = 0.700 / 0.5
-                                else:
-                                    corre_num = 0.017
-                                    k = 0.699 / 0.5
-                        if ori_sigma==1:
-                            if reg == 1 and train_corre == 0.01:
-                                corre_num = 0.013
-                                k = 1.1992 / 1
-                        if ori_sigma==1.5:
-                            if reg == 1 and train_corre == 0.01:
-                                corre_num = 0.0116
-                                k = 1.6997 / 1.5
-                        if ori_sigma==2:
-                            if reg == 1 and train_corre == 0.01:
-                                corre_num = 0.013
-                                k = 2.1963 / 2
-                    if gm_method == "pca" and ori_sigma == 0.5:
-                        corre_num = 0.025
-                        k = 0.6980 / 0.5
-                    if gm_method == "cie" and ori_sigma == 0.5:
-                        corre_num = 0.029
-                        k = 0.6973 / 0.5
-                    if gm_method == "gmn" and ori_sigma == 0.5:
-                        corre_num = 0.027
-                        k = 0.6985 / 0.5
-
+                    corre_num = 0.027
+                    k = 0.6985 / 0.5
 
                     for cov in [1]:
 
